@@ -16,6 +16,7 @@ console.log(num1 !== num2);
 let value = 45;
 if (value > 40) {
   console.log("bigger value");
+
 } else if (value < 40) {
   console.log("smaller value");
 }
