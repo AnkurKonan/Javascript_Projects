@@ -29,3 +29,11 @@ console.log(about);
 let about2 = `Hello I am ${name} and my age is ${age}`;
 console.log(about2);
 
+let myVariable = null;
+console.log(myVariable);
+myVariable = "Gasoline";
+console.log(myVariable, typeof myVariable);
+console.log(typeof null);
+
+
+
