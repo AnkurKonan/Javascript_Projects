@@ -38,3 +38,34 @@ switch (age) {
     console.log("Excellent");
 }
 
+let i = 0;
+while (i <= 9) {
+  console.log(i);
+  i++;
+}
+consolelof(`Current value of i is ${i}`);
+console.log("hello");
+
+let num = 100;
+let total = 0; //1 + 2 +3
+let i = 0;
+while (i <= 100) {
+  total = total + i;
+  i++;
+}
+console.log(total);
+
+let total = (num * (num + 1)) / 2;
+console.log(total);
+
+for (let i = 0; i <= 9; i++) {
+  console.log(i);
+}
+console.log("value of i is ", i);
+
+let total = 0;
+let num = 100;
+for (let i = 1; i <= num; i++) {
+  total = total + i;
+}
+console.log(total);
