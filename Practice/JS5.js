@@ -45,3 +45,7 @@ console.log(fruits);
 let removedFruit = fruits.shift();
 console.log(fruits);
 console.log("removed fruits is ", removedFruit);
+
+let array1 = ["items", "items2"];
+let array2 = array1.slice(0).concat(["item3", "item4"]);
+console.log(array2);
