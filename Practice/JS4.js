@@ -24,3 +24,17 @@ if (tempInDegree > 40) {
 }
 console.log("hello");
 
+let age = 10;
+switch (age) {
+  case 1:
+    console.log("Good");
+  case 2:
+    console.log("very good");
+  case 3:
+    console.log("Very very good");
+  case 4:
+    console.log("very very good");
+  case 10:
+    console.log("Excellent");
+}
+
