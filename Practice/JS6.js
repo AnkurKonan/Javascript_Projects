@@ -16,3 +16,15 @@ console.log("after pushing element to array 1");
 console.log("array1", array1);
 console.log("array2", array2);
 
+let array5 = ["items5", "items6"];
+let array6 = array1.slice(0).concat(["item7", "item8"]);
+console.log(array6);
+
+
+let array3 = ["item3", "item4"];
+let oneMoreArray = ["item9", "item10"];
+let array4 = [...array3, ...oneMoreArray];
+console.log(array3 === array4);
+console.log(array3);
+console.log(array4);
+
