@@ -3,68 +3,176 @@
     <head>
         <title>Type Writer</title>
     </head>
+    <body>
+        <style>
+            body {
+                background-color: seagreen;
+            }
+            .row1 {
+                margin-left: 500px;
+            }
+            .row2 {
+                margin-left: 500px;
+            }
+            .row3 {
+                margin-left: 500px;
+            }
+            .row4 {
+                margin-left: 500px;
+            }
+            .row5 {
+                margin-left: 500px;
+            }
+            .console_window {
+                display: flex;
+            }
+            .console_window p {
+                height: 60px;
+                flex-basis: 302px;
+                margin-left: 508px;
+                font-size: 25px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                border: solid 5px black;
+                border-radius: 10px;
+                font-size: 50px;
+            }
+            button {
+                margin: 9px 7px;
+                width: 65px;
+                height: 65px;
+                background: black;
+                font-size: 30px;
+                color: white;
+                border-radius: 10px;
+                border: solid 2px black;
+            }
+            #button-0 {
+                margin: 9px 7px;
+                width: 150px;
+                height: 65px;
+                background: black;
+                font-size: 30px;
+                color: white;
+                border-radius: 10px;
+                border: solid 2px black;
+            }
+            .cal {
+                border: solid 5px black;
+                padding: 20px;
+                border-radius: 10px;
+            }
+        </style>
+        <div class="cal">
+            <div class="console_window">
+                <p id="console"></p>
+            </div>
+            <div class="row1">
+                <button onclick="back()">C</button>
+                <button onclick="and()">&</button>
+                <button onclick="percent()">%</button>
+                <button onclick="multiply()">*</button>
+            </div>
+
+            <div class="row2">
+                <button onclick="one()">1</button>
+                <button onclick="two()">2</button>
+                <button onclick="three()">3</button>
+                <button onclick="plus()">+</button>
+            </div>
+
+            <div class="row3">
+                <button onclick="four()">4</button>
+                <button onclick="five()">5</button>
+                <button onclick="six()">6</button>
+                <button onclick="minus()">-</button>
+            </div>
+            <div class="row4">
+                <button onclick="seven()">7</button>
+                <button onclick="eight()">8</button>
+                <button onclick="nine()">9</button>
+                <button onclick="slash()">/</button>
+            </div>
+            <div class="row5">
+                <button id="button-0" onclick="zero()">0</button>
+                <button onclick="dot()">.</button>
+                <button onclick="equal()">=</button>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var console = document.getElementById("console");
+            function one() {
+                console.innerHTML = console.innerHTML + "1";
+            }
+            var console = document.getElementById("console");
+            function two() {
+                console.innerHTML = console.innerHTML + "2";
+            }
+            var console = document.getElementById("console");
+            function three() {
+                console.innerHTML = console.innerHTML + "3";
+            }
+            var console = document.getElementById("console");
+            function four() {
+                console.innerHTML = console.innerHTML + "4";
+            }
+            var console = document.getElementById("console");
+            function five() {
+                console.innerHTML = console.innerHTML + "5";
+            }
+            var console = document.getElementById("console");
+            function six() {
+                console.innerHTML = console.innerHTML + "6";
+            }
+            var console = document.getElementById("console");
+            function seven() {
+                console.innerHTML = console.innerHTML + "7";
+            }
+            var console = document.getElementById("console");
+            function eight() {
+                console.innerHTML = console.innerHTML + "8";
+            }
+            var console = document.getElementById("console");
+            function nine() {
+                console.innerHTML = console.innerHTML + "9";
+            }
+            var console = document.getElementById("console");
+            function zero() {
+                console.innerHTML = console.innerHTML + "0";
+            }
+            var console = document.getElementById("console");
+            function slash() {
+                console.innerHTML = console.innerHTML + "/";
+            }
+            var console = document.getElementById("console");
+            function equal() {
+                console.innerHTML = console.innerHTML + "=";
+            }
+            var console = document.getElementById("console");
+            function plus() {
+                console.innerHTML = console.innerHTML + "+";
+            }
+            var console = document.getElementById("console");
+            function minus() {
+                console.innerHTML = console.innerHTML + "-";
+            }
+            var console = document.getElementById("console");
+            function multiply() {
+                console.innerHTML = console.innerHTML + "*";
+            }
+            var console = document.getElementById("console");
+            function add() {
+                console.innerHTML = console.innerHTML + "&";
+            }
+            var console = document.getElementById("console");
+            function percent() {
+                console.innerHTML = console.innerHTML + "*";
+            }
+            var console = document.getElementById("console");
+            function dot() {
+                console.innerHTML = console.innerHTML + ".";
+            }
+        </script>
+    </body>
 </html>
-<body>
-    <style>
-        body {
-            background-color: seagreen;
-        }
-        .console_window {
-            display: flex;
-        }
-        .console_window p {
-            height: 50px;
-            flex-basis: 800px;
-            margin-left: 200px;
-            font-size: 25px;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            border: solid 5px black;
-            border-radius: 7px;
-        }
-        button {
-            margin: 10px 5px;
-            width: 65px;
-            height: 65px;
-            background: black;
-            color: white;
-            border-radius: 10px;
-            border: solid 2px black;
-        }
-    </style>
-    <div class="console_window">
-        <p id="console"></p>
-    </div>
-    <div class="row1">
-        <button onclick="one()">C</button>
-        <button onclick="two()">&</button>
-        <button onclick="three()">%</button>
-        <button onclick="d()">/</button>
-    </div>
-
-    <div class="row2">
-        <button onclick="one()">1</button>
-        <button onclick="two()">2</button>
-        <button onclick="three()">3</button>
-        <button onclick="d()">+</button>
-    </div>
-
-    <div class="row3">
-        <button onclick="q()">4</button>
-        <button onclick="w()">5</button>
-        <button onclick="e()">6</button>
-        <button onclick="d()">-</button>
-    </div>
-    <div class="row4">
-        <button onclick="a()">7</button>
-        <button onclick="s()">8</button>
-        <button onclick="d()">9</button>
-        <button onclick="d()">/</button>
-    </div>
-    <div class="row5">
-        <button onclick="z()">0</button>
-        <button onclick="x()">.</button>
-        <button onclick="c()">=</button>
-    </div>
-</body>
